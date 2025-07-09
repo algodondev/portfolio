@@ -27,9 +27,15 @@ header .header-container {
   align-items: center;
 }
 
-header h1 a {
+header .header-title a {
   text-decoration: none;
   color: inherit;
+}
+
+header .header-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #666;
 }
 
 header .nav-links {
@@ -51,11 +57,21 @@ header .header-container .nav-links {
   margin-top: 1rem;
 }
 
-main.container {
+main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  border: 1px solid blue;
+}
+
+main .projects-container .projects-list {
+  list-style: none;
+}
+
+main .projects-container .projects-list a {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
