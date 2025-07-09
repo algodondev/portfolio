@@ -230,6 +230,23 @@ body::before {
   font-weight: 700;
 }
 
+.back-button {
+  display: inline-block;
+  font-size: 3rem;
+  color: var(--neon-green);
+  text-decoration: none;
+  text-shadow: 0 0 15px var(--glow-green);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.back-button:hover {
+  color: var(--dark-cyan);
+  text-shadow: 0 0 20px var(--glow-cyan);
+  transform: scale(1.1);
+}
+
 footer {
   padding: 1rem;
   text-align: center;
