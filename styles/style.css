@@ -47,6 +47,14 @@ body:has(main #contact:target) .content-wrapper header {
   border: 4px solid green;
 }
 
+/* Change header-container color when sections are active */
+body:has(main #about:target) .content-wrapper header,
+body:has(main #projects:target) .content-wrapper header,
+body:has(main #contact:target) .content-wrapper header {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 /* Target body when sections are active */
 body:has(main #about:target) .content-wrapper,
 body:has(main #projects:target) .content-wrapper,
@@ -102,7 +110,7 @@ body:has(main #contact:target) .content-wrapper main {
   display: none;
   flex: 2;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   border: 1px solid blue;
   color: white;
