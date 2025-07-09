@@ -11,59 +11,81 @@ body {
   flex-direction: column;
 }
 
-header {
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content-wrapper header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
   padding: 2rem;
-  border: 1px solid blue;
+  border: 4px solid blue;
+  transition: all 0.3s ease;
 }
 
-header .header-container {
+.content-wrapper header .header-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border: 1px solid red;
-  transition: all 0.3s ease;
 }
 
 /* Animation when any section is targeted */
-header:has(~ main #about:target) .header-container,
-header:has(~ main #projects:target) .header-container,
-header:has(~ main #contact:target) .header-container {
-  border: 1px solid green;
+body:has(main #about:target) .content-wrapper header,
+body:has(main #projects:target) .content-wrapper header,
+body:has(main #contact:target) .content-wrapper header {
+  border: 4px solid green;
 }
 
-header .header-title a {
+/* Target body when sections are active */
+body:has(main #about:target) .content-wrapper,
+body:has(main #projects:target) .content-wrapper,
+body:has(main #contact:target) .content-wrapper {
+  flex-direction: row;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.5s ease;
+}
+
+/* Show main when sections are active */
+body:has(main #about:target) .content-wrapper main,
+body:has(main #projects:target) .content-wrapper main,
+body:has(main #contact:target) .content-wrapper main {
+  display: flex;
+}
+
+.content-wrapper header .header-title a {
   text-decoration: none;
   color: inherit;
 }
 
-header .header-subtitle {
+.content-wrapper header .header-subtitle {
   font-size: 1.2rem;
   font-weight: 400;
   color: #666;
 }
 
-header .nav-links {
+.content-wrapper header .nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
-header .nav-links a {
+.content-wrapper header .nav-links a {
   text-decoration: none;
   color: black;
   transition: color 0.3s ease;
 }
 
-header .nav-links a:hover {
+.content-wrapper header .nav-links a:hover {
   color: #3498db;
 }
 
-header .header-container .nav-links {
+.content-wrapper header .header-container .nav-links {
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
@@ -71,29 +93,38 @@ header .header-container .nav-links {
   margin-top: 1rem;
 }
 
-main {
-  display: flex;
+.content-wrapper main {
+  display: none;
+  flex: 2;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid blue;
 }
 
-main .about-container {
+.content-wrapper main .test-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid orange;
+}
+
+.content-wrapper main .about-container {
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid red;
 }
-main .projects-container {
+.content-wrapper main .projects-container {
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid red;
 }
-main .contact-container {
+.content-wrapper main .contact-container {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -107,11 +138,11 @@ main .contact-container {
   display: flex;
 }
 
-main .projects-container .projects-list {
+.content-wrapper main .projects-container .projects-list {
   list-style: none;
 }
 
-main .projects-container .projects-list a {
+.content-wrapper main .projects-container .projects-list a {
   text-decoration: none;
   color: black;
 }
