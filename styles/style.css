@@ -65,6 +65,34 @@ main {
   border: 1px solid blue;
 }
 
+main .about-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+main .projects-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+main .contact-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+#about:target,
+#projects:target,
+#contact:target {
+  display: flex;
+}
+
 main .projects-container .projects-list {
   list-style: none;
 }
