@@ -99,20 +99,62 @@ body {
   justify-content: center;
 }
 
-#about:target,
 #projects:target,
 #contact:target {
   display: flex;
 }
 
-.content-wrapper main .projects-container .projects-list {
-  list-style: none;
-  text-align: right;
+#projects:target ~ .about-container,
+#contact:target ~ .about-container {
+  display: none;
 }
 
-.content-wrapper main .projects-container .projects-list a {
-  text-decoration: none;
+.projects-container .projects-list {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-container .projects-list li {
+  margin-bottom: 2.5rem;
+}
+
+.projects-container .projects-list a {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
   color: white;
+  text-decoration: none;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+.projects-container .projects-list .project-details {
+  display: block;
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: 300;
+  margin-top: 0.2em;
+  letter-spacing: 0.01em;
+}
+
+@media (min-width: 768px) {
+  .projects-container .projects-list a {
+    font-size: 4rem;
+  }
+  .projects-container .projects-list .project-details {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-container .projects-list a {
+    font-size: 5rem;
+  }
+  .projects-container .projects-list .project-details {
+    font-size: 1.2rem;
+  }
 }
 
 footer {
