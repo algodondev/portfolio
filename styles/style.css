@@ -6,14 +6,7 @@
 
 :root {
   --neon-green: #00ff41;
-  --dark-green: #00cc33;
-  --matrix-green: #00ff00;
-  --cyber-blue: #0080ff;
   --dark-cyan: #00ffff;
-  --blood-red: #ff0040;
-  --dark-gray: #0a0a0a;
-  --charcoal: #1a1a1a;
-  --steel-gray: #2a2a2a;
   --text-gray: #cccccc;
   --glow-green: #00ff41;
   --glow-cyan: #00ffff;
@@ -74,7 +67,7 @@ body::before {
 .content-wrapper header .header-title a {
   text-decoration: none;
   color: var(--neon-green);
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   text-shadow: 0 0 15px var(--glow-green);
   transition: all 0.3s ease;
@@ -86,7 +79,7 @@ body::before {
 }
 
 .content-wrapper header .header-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--text-gray);
   margin-top: 0.5rem;
@@ -105,7 +98,7 @@ body::before {
   text-decoration: none;
   color: var(--neon-green);
   transition: all 0.3s ease;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-shadow: 0 0 8px var(--glow-green);
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
@@ -141,13 +134,13 @@ body::before {
 }
 
 .content-wrapper main .about-container .main-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .content-wrapper main .about-container .main-description {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   color: var(--text-gray);
   text-shadow: 0 0 5px var(--text-gray);
@@ -195,7 +188,7 @@ body::before {
 }
 
 .projects-container .projects-list a {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: 300;
   letter-spacing: 0.02em;
   color: var(--neon-green);
@@ -214,7 +207,7 @@ body::before {
 
 .projects-container .projects-list .project-details {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--text-gray);
   font-weight: 300;
   margin-top: 0.5rem;
@@ -223,7 +216,7 @@ body::before {
 }
 
 .contact-container .contact-info p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: var(--text-gray);
   text-shadow: 0 0 5px var(--text-gray);
@@ -233,7 +226,7 @@ footer {
   padding: 1rem;
   text-align: center;
   color: var(--neon-green);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-shadow: 0 0 8px var(--glow-green);
   border-top: 1px solid var(--neon-green);
   background: rgba(0, 0, 0, 0.3);
