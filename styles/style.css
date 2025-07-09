@@ -25,6 +25,15 @@ header .header-container {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid red;
+  transition: all 0.3s ease;
+}
+
+/* Animation when any section is targeted */
+header:has(~ main #about:target) .header-container,
+header:has(~ main #projects:target) .header-container,
+header:has(~ main #contact:target) .header-container {
+  border: 1px solid green;
 }
 
 header .header-title a {
@@ -47,6 +56,11 @@ header .nav-links {
 header .nav-links a {
   text-decoration: none;
   color: black;
+  transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+  color: #3498db;
 }
 
 header .header-container .nav-links {
