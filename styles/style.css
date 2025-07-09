@@ -158,9 +158,9 @@ body::before {
 .content-wrapper main .contact-container {
   display: none;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
-  text-align: right;
+  text-align: left;
   width: 100%;
   max-width: 600px;
 }
@@ -222,6 +222,14 @@ body::before {
   text-shadow: 0 0 5px var(--text-gray);
 }
 
+.content-text {
+  font-size: 1.8rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 25px var(--glow-green), 0 0 35px var(--glow-green),
+    0 0 45px var(--glow-green), 0 0 55px var(--glow-green);
+  font-weight: 700;
+}
+
 footer {
   padding: 1rem;
   text-align: center;
@@ -273,8 +281,8 @@ footer {
   }
 
   .content-wrapper main .about-container {
-    align-items: flex-end;
-    text-align: right;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .content-wrapper main .about-container .main-title {
@@ -304,6 +312,10 @@ footer {
 
   .contact-container .contact-info p {
     font-size: 1.1rem;
+  }
+
+  .content-text {
+    font-size: 2.2rem;
   }
 }
 
@@ -335,6 +347,10 @@ footer {
 
   .contact-container .contact-info p {
     font-size: 1.2rem;
+  }
+
+  .content-text {
+    font-size: 2.5rem;
   }
 }
 
